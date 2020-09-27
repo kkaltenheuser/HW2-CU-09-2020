@@ -4,6 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Contact.KKaltenheuser</title>
   </head>
-  <body></body>
+  <body>
+    <!-- placeholder for contact form -->
+    <!-- incldue name, email address, message, and captcha box-->
+    <div class="container">
+      <div style="text-align: center">
+        <h2>Contact Karen</h2>
+        <p>
+          Drop a line or perhaps send a courrier pigeon, either way expect a
+          response within one business day.
+        </p>
+      </div>
+      <div class="row">
+        <div class="column">
+          <form action="/action_page.php">
+            <!-- where an individual states what their name is in referencing to being contacted-->
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Your name is.."
+            />
+            <!-- where potential viewers are able to state how they would like to be addressed-->
+            <label for="pronouns">Pronouns</label>
+            <input
+              type="text"
+              id="pronouns"
+              name="Pronouns"
+              placeholder="He/Him, She/Her, Xe/Xir, They/Them..."
+            />
+            <!-- where potential contacts let you know how to reach them via le web-->
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email" />
+            <!-- where viewers share why they are contacting you in the first place-->
+            <label for="Message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write something.."
+              style="height: 170px"
+            ></textarea>
+            <!-- Submission Button needs to be moved or see if it can hinge up the captcha-->
+            <input type="submit" value="Submit" />
+            <!-- START CAPTCHA -->
+            <div class="capbox">
+              <div id="CaptchaDiv"></div>
+
+              <div class="capbox-inner">
+                Type the number:<br />
+
+                <input type="hidden" id="txtCaptcha" />
+                <input
+                  type="text"
+                  name="CaptchaInput"
+                  id="CaptchaInput"
+                  size="15"
+                /><br />
+              </div>
+            </div>
+            <br /><br />
+            <!-- END CAPTCHA -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
