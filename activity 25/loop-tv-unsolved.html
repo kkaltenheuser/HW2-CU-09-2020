@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Favorite TV Shows</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      // Array of TV Shows
+      var favTVshows = ["schitt's creek", "broad city", "too hot to handle"];
+      var tvShow;
+
+      // For Loop Elements Repeats 3 Times
+      for (var i = 1; i < 4; i++) {
+        // What is your #1 favorite TV show?
+        tvShow = prompt("What's your #" + i + " favorite TV show?");
+
+        // answers from prompt are being pushed into fave tv show's array
+        favTVshows.push(tvShow);
+      }
+
+      // generating the show from the user into the loop
+      for (var j = 0; j < favTVshows.length; j++) {
+        // posting the answers as alerts to the user
+        alert(favTVshows[j]);
+      }
+    </script>
+  </body>
+</html>
